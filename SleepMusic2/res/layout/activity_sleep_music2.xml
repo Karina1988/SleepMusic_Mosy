@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SleepMusic2" >
+
+    <ImageView
+        android:id="@+id/hgfarbe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/minute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/ic_launcher" />
+
+<LinearLayout
+    android:id="@+id/titel"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="50dp"
+        android:background="@color/grey"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/player_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+    <TextView
+        android:id="@+id/songtitel"
+        android:textColor="#04b3d2"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/btnPlay" />
+    
+ </LinearLayout>
+ 
+    <LinearLayout
+        android:id="@+id/mitte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageButton
+            android:id="@+id/btnPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:src="@drawable/btn_playlist" />
+    </LinearLayout>
+       
+       <LinearLayout
+        android:id="@+id/mitte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/sekunde"
+        android:layout_width="40px"
+        android:layout_height="wrap_content"
+        android:textColor="#04b3d2"
+        android:layout_above="@+id/progress"
+        android:layout_alignRight="@+id/progress" />
+
+    <TextView
+        android:id="@+id/minute"
+        android:layout_width="30px"
+        android:textColor="#04b3d2"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress"
+        android:layout_toLeftOf="@+id/sekunde" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPlay"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:src="@drawable/btn_pause" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnForward"
+        android:layout_toRightOf="@+id/btnForward"
+        android:background="@null"
+        android:src="@drawable/btn_next" />
+
+    <ImageButton
+        android:id="@+id/btnPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_toLeftOf="@+id/btnBack"
+        android:background="@null"
+        android:src="@drawable/btn_prev" />
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPause"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/btn_play" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnPlay"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/btnPause"
+        android:background="@null"
+        android:src="@drawable/btn_back" />
+
+    <ImageButton
+        android:id="@+id/btnForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_toRightOf="@+id/btnPause"
+        android:background="@null"
+        android:src="@drawable/btn_forward" />
+
+</RelativeLayout>
